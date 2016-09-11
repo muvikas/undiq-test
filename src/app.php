@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 use Symfony\Component\Routing;
 
 $routes = new Routing\RouteCollection();
