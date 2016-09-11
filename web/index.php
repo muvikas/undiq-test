@@ -1,4 +1,7 @@
 ﻿<?php
+
+echo 'BBB';
+die();
 // framework/front.php
 require_once __DIR__.'/../vendor/autoload.php';
 
