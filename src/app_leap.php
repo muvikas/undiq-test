@@ -12,7 +12,7 @@ function is_leap_year($year = null) {
 
 $routes = new Routing\RouteCollection();
 
-$routes->add('leap_year', new Routing\Route('/is_leap_year/{year}', array(
+$routes->add('leap_year', new Routing\Route('/leap/{year}', array(
     'year' => null,
     '_controller' => function ($request) {
         if (is_leap_year($request->attributes->get('year'))) {
