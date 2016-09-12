@@ -11,7 +11,7 @@ use Symfony\Component\Routing;
 use Symfony\Component\HttpKernel;
 
 $request = Request::createFromGlobals();
-$routes = include __DIR__.'/../src/app_leap.php';
+$routes = include __DIR__.'/../src/app.php';
 
 $context = new Routing\RequestContext();
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);

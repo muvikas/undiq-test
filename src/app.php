@@ -2,12 +2,11 @@
 use Symfony\Component\Routing;
 
 $routes = new Routing\RouteCollection();
-$routes->add('hello', new Routing\Route('/hello/{name}', array(
-    'name' => 'World',
-    '_controller' => function ($request) {
-        return render_template($request);
-    }
+$routes->add('form', new Routing\Route('/', array(
+    '_controller' => 'UndiqTest\\Controller\\MainController::indexAction'
 )));
-$routes->add('bye', new Routing\Route('/bye'));
+$routes->add('response', new Routing\Route('/response', array(
+    '_controller' => 'UndiqTest\\Controller\\MainController::responseAction'
+)));
 
 return $routes;
