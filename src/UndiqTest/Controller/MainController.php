@@ -9,9 +9,7 @@ use UndiqTest\Model\Form;
 class MainController extends Controller
 {
     public function indexAction()
-    {
-		$request = Request::createFromGlobals();
-		
+    {	
 		$vars = array();
 		$vars['returnRoute'] = 'response';
 		
@@ -23,7 +21,6 @@ class MainController extends Controller
 		$request = Request::createFromGlobals();
 		
 		$vars = array();
-		
 		$vars['input'] = $request->request->get('simpleInput', 'No input');
 		
 		return $this->render('response', $vars);
